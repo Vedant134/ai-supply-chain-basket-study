@@ -1,0 +1,100 @@
+{
+  "diagnostics": {
+    "calibration_first": "2020-02-10",
+    "calibration_last": "2022-02-07",
+    "out_of_sample_first": "2022-02-10",
+    "out_of_sample_last": "2026-10-05",
+    "calibration_hedge_ratio": 0.9536654891138053,
+    "training_cointegration_p": 0.716469476146245,
+    "training_adf_spread_p": 0.480881213528451,
+    "classifier_accuracy": 0.5077586206896552,
+    "majority_class_accuracy": 0.5086206896551724,
+    "classifier_roc_auc": 0.4949449895926257,
+    "labeled_out_of_sample_days": 1160,
+    "cointegration_null": "no cointegration; p<0.05 is one possible rejection rule, not proof of future stability"
+  },
+  "metrics": {
+    "baseline": {
+      "total_return": 0.027514834699829516,
+      "cagr": 0.005883503034093129,
+      "annual_volatility": 0.14976666443014208,
+      "sharpe_zero_cash_rate": 0.11386331986964494,
+      "max_drawdown": -0.24407303472509534,
+      "entries_or_reversals": 17,
+      "gross_turnover": 33.0,
+      "invested_days": 916
+    },
+    "ml": {
+      "total_return": 0.23809153787252524,
+      "cagr": 0.04723958527723848,
+      "annual_volatility": 0.13629406907083264,
+      "sharpe_zero_cash_rate": 0.40656207502689745,
+      "max_drawdown": -0.23648988129018034,
+      "entries_or_reversals": 14,
+      "gross_turnover": 27.0,
+      "invested_days": 737
+    },
+    "buy_hold": {
+      "total_return": 6.812868614271916,
+      "cagr": 0.5593992961966072,
+      "annual_volatility": 0.3854019705966935,
+      "sharpe_zero_cash_rate": 1.3470493779202708,
+      "max_drawdown": -0.390114681077119,
+      "entries_or_reversals": 1,
+      "gross_turnover": 0.0,
+      "invested_days": 1166
+    },
+    "annual_net_returns": {
+      "2022": {
+        "baseline": -0.0621590809301924,
+        "ml": -0.09746984264530167
+      },
+      "2023": {
+        "baseline": 0.03397988849285283,
+        "ml": 0.04980316156785647
+      },
+      "2024": {
+        "baseline": 0.13291267779926863,
+        "ml": 0.2534497976482013
+      },
+      "2025": {
+        "baseline": -0.04298993365712411,
+        "ml": 0.007255400009164692
+      },
+      "2026": {
+        "baseline": -0.022686520345284844,
+        "ml": 0.03499108165736331
+      }
+    },
+    "ml_cost_sensitivity": {
+      "0": 0.2617206075310703,
+      "7": 0.23809153787249082,
+      "20": 0.19533469026083017
+    }
+  },
+  "data_manifest": {
+    "source": "Yahoo Finance via yfinance",
+    "source_url": "https://github.com/ranaroussi/yfinance",
+    "retrieved_at_utc": "2026-10-06T05:22:16.583726+00:00",
+    "yfinance_version": "1.3.0",
+    "start_inclusive": "2020-02-10",
+    "end_exclusive": "2026-10-06",
+    "adjustment": "yfinance auto_adjust=True; adjusted daily close",
+    "symbols": [
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "VRT",
+      "ETN",
+      "PWR"
+    ],
+    "raw_sessions": 1672,
+    "complete_sessions": 1672,
+    "dropped_sessions": [],
+    "first_complete_session": "2020-02-10",
+    "last_complete_session": "2026-10-05",
+    "raw_sha256": "411dd14a7a43f12b995358f50c460b7d7ca8c2776b2723f006a36222679bc16a",
+    "clean_sha256": "411dd14a7a43f12b995358f50c460b7d7ca8c2776b2723f006a36222679bc16a",
+    "selection_note": "These are present-day chosen stocks, not historical sector indexes; selection bias remains."
+  }
+}
